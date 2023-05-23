@@ -252,3 +252,39 @@
 .title-benefit-describe135 {
     color: black;
 }
+
+.text-coaching {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 400%;
+    display: inline;
+}
+
+#img-coaching {
+    width: 100%;
+}
+
+.coaching-btn {
+    display: inline;
+}
+
+#btn-demo-learnmore {
+    background-color: #4fb291;
+    width: 25%;
+    height: 25%;
+}
+
+#btn-demo-coaching {
+    background-color: #4fb291;
+    width: 25%;
+    height: 25%;
+}
+
+.text-coaching-row2 {
+    font-size: large;
+    color: black;
+}
