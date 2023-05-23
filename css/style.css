@@ -1,0 +1,290 @@
+#nav-bar {
+    width: auto;
+    height: 15%;
+}
+
+#ul-navbar {
+    /* background-color: aquamarine; */
+    list-style-type: None;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.li-navbar-left {
+    height: 40px;
+    float: left;
+    display: inline;
+    padding: 8px;
+    padding-left: 10%;
+}
+
+.li-navbar-right {
+    float: right;
+    display: inline;
+    padding: 8px;
+    padding-right: 10%;
+}
+
+#logo-img {
+    height: 50px;
+    width: 50px;
+    padding-bottom: 0;
+}
+
+#btn-menu {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#background-image {
+    width: 100%;
+}
+
+#page-body-intro {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#text-intro-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn-bgr-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    margin-top: 18%;
+    border-radius: 1rem;
+    border-color: black;
+    background-color: #4fb291;
+    width: 20%;
+    height: fit-content;
+    font-family: 'Montserrat';
+    font-size: 200%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#btn-bgr-intro-text {
+    margin-top: 1%;
+}
+
+
+.img-bgr-intro {
+    position: relative;
+    text-align: center;
+    color: white;
+    object-fit: scale-down;
+    object-fit: cover;
+}
+
+
+
+.text-intro-row-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #243f56;
+    font-size: 600%;
+}
+
+
+.text-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #243f56;
+    font-family: Montserrat, sans-serif;
+    font-size: 400%;
+    display: inline;
+}
+
+.row2 {
+    font-weight: bold;
+    display: inline;
+    margin-top: 5%;
+    width: 100%;
+}
+
+#img-intro {
+    height: 50%;
+}
+
+.row3 {
+    display: inline;
+    margin-top: 10%;
+    width: 40%;
+    font-size: 100%;
+    display: block;
+}
+
+.row4 {
+    margin-top: 22%;
+    font-size: medium;
+}
+
+.grid-container-describe {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5%;
+    width: 100%;
+
+}
+
+.grid-item-describe {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 15%;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 5%;
+    text-align: center;
+    height: 100%;
+    width: 60%;
+}
+
+.center-col {
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #4fb291;
+}
+
+.left-col {
+    margin-left: 15%;
+    background-color: #243f56;
+}
+
+.right-col {
+    margin-right: 15%;
+    background-color: #243f56;
+}
+
+.text-describe {
+    color: white;
+}
+
+.title-describe {
+    color: white;
+}
+
+.span-col-descibe {
+    background-color: white;
+    width: 5%;
+    width: 5%;
+    align-items: center;
+}
+
+.icon-col-img {
+    height: 50px;
+    width: 50px;
+    padding-top: 2%;
+}
+
+.welcome-div {
+    width: 100%;
+    background-color: #243f56;
+    margin: auto;
+    padding: 0;
+}
+
+
+.welcome-message {
+    color: white;
+    font-family: sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-size: medium;
+    text-align: center;
+}
+
+.welcome-title {
+    font-size: 3rem;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.bar-welcome {
+    background-color: #4fb291;
+    position: fixed;
+    margin-left: 0%;
+}
+
+.cell135 {
+    background-color: white;
+}
+
+.cell46 {
+    background-color: #243f56;
+}
+
+.text-benefit-135 {
+    color: black;
+}
+
+.benefit-div {
+    text-align: center;
+}
+
+#benefit-title {
+    font-size: 400%;
+}
+
+.title-benefit-describe135 {
+    color: black;
+}
+
+.text-coaching {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 400%;
+    display: inline;
+}
+
+#img-coaching {
+    width: 100%;
+}
+
+.coaching-btn {
+    display: inline;
+}
+
+#btn-demo-learnmore {
+    background-color: #4fb291;
+    width: 25%;
+    height: 25%;
+}
+
+#btn-demo-coaching {
+    background-color: #4fb291;
+    width: 25%;
+    height: 25%;
+}
+
+.text-coaching-row2 {
+    font-size: large;
+    color: black;
+}
