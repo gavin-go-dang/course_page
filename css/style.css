@@ -139,8 +139,11 @@
 .grid-container-describe {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 5%;
+    padding-top: 2%;
     width: 100%;
+    margin-top: 0;
+    padding-bottom: 5%;
+    padding-left: 5%;
 
 }
 
@@ -197,6 +200,7 @@
 }
 
 .welcome-div {
+    /* position: absolute; */
     width: 100%;
     background-color: #243f56;
     margin: auto;
@@ -213,6 +217,7 @@
     width: 40%;
     font-size: medium;
     text-align: center;
+    padding-top: 10%
 }
 
 .welcome-title {
@@ -221,6 +226,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    padding-top: 4%;
+}
+
+.welcome-text {
+    padding-bottom: 4%;
 }
 
 .bar-welcome {
@@ -252,6 +262,8 @@
 .title-benefit-describe135 {
     color: black;
 }
+
+
 
 .text-coaching {
     position: absolute;
