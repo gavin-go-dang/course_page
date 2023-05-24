@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hover.css" />    
     <title>Page Courses</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    <!-- nav bar -->
-    <div id="nav-bar">
-        <ul id = "ul-navbar">
-            <li class="li-navbar-left">
-                <img src="./image/logo-social.jpg" alt="logo-jpg" id="logo-img">
-            </li>
-            <li class="li-navbar-right">
-                <button class="btn"><i class="fa fa-bars"><button id="btn-menu"><i class="fa fa-bars"></i> Menu</button></button>
-            </li>
-        </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Page1</a>
+        <a href="#">Page2</a>
     </div>
-
+      
+    <!-- nav bar -->
+    <nav id="navbar">
+        <img src="./image/logo-social.jpg" alt="logo-jpg" id="logo-img">
+        <span class="button button1" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
+    </nav>
     <!-- page-body -->
     <div class="img-bgr-intro">
         <img src="./image/background-image_351866.jpg" alt="Snow" style="width:100%;" id="img-intro">
@@ -28,18 +30,18 @@
         <div class="text-intro row3">            
                 Sample text. Click to select the text box. Click again or double click to start editing the text. Viverra maecenas accumsan lacus vel facilisis volutpat. Cras fermentum odio eu feugiat pretium nibh. 
         </div>
-        
-        <div id="btn-bgr-intro" >
-            <p id="btn-bgr-intro-text">
-                Learn more
-            </p>
-        </div>
+        <button id="btn-bgr-intro" class="hover-button-white-green">
+            Learn More
+        </button>
         <div class="text-intro row4">
             Image from <a href="https://www.freepik.com/">Feepik</a> 
         </div>
     </div>
 
+    <!-- describe course -->
+
     <div class="grid-container-describe">
+        <!-- COL 1 -->
         <div class="grid-item-describe left-col">
             <span class="span-col-descibe">
                 <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -52,6 +54,7 @@
             </p>
             <img src="./image/3031716.png" alt="icon-1" class="icon-col-img">
         </div>
+        <!-- COL 2 -->
         <div class="grid-item-describe center-col">
             <span class="span-col-descibe">
                 <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -64,13 +67,16 @@
             </p>
             <img src="./image/3031716.png" alt="icon-1" class="icon-col-img">
         </div>
-        <div class="grid-item-describe right-col">
+        <!-- COL 3 -->
+        <div class="grid-item-describe right-col">            
             <span class="span-col-descibe">
                 <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
             </span>
+
             <h4 class="title-describe">
                 Grow it
             </h4>
+
             <p class="text-describe">
                 Sample text. Click to select the text box. Click again or double click to start editing the text.
             </p>
@@ -79,20 +85,21 @@
         </div>
     </div>
     <div class="welcome-div">
+        <div class="welcome-bar bar-left" ></div>
+        <div class="welcome-bar bar-right"></div>
         <div class="welcome-message">
             <h2 class="welcome-title">
                 Welcome Message
             </h2>
         </div>
+
         <div class="welcome-div welcome-text">
             <p class="welcome-message welcome-text">
                 Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor. A lacus vestibulum sed arcu non. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Nec feugiat nisl pretium fusce id. Justo laoreet sit amet cursus sit amet. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero.
             </p>
         </div>
         
-        <div class="bar-welcome bar-left">\
-
-        </div>
+        <button class="btn-welcome welcome-text" id="btn-welcome"><span>Learn more</span></button>
     </div>
 
     <div class="benefit-div">
@@ -112,7 +119,7 @@
             </div>
             <div class="grid-item-describe center-col cell2 top-row">
                 <span class="span-col-descibe">
-                    <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
+                    <i class='fas fa-arrow-right' style='font-size:48px;color:red'></i>
                 </span>
                 <h4 class="title-describe">
                     Create it
@@ -133,9 +140,7 @@
                     Sample text. Click to select the text box. Click again or double click to start editing the text.
                 </p>
                 <img src="./image/3031716.png" alt="icon-1" class="icon-col-img">
-
             </div>
-
             <div class="grid-item-describe left-col cell46">
                 <span class="span-col-descibe">
                     <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -174,13 +179,12 @@
 
             </div>
         </div>
-
     </div>
     <div class="img-bgr-intro">
         <img src="./image/bg-coaching.jpg" alt="Snow" style="width:100%;" id="img-coaching">
         <div class="text-coaching">How Coaching Works</div>
-        <div class="text-coaching-row2">
-           <p> Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.
+        <div class="text-coaching text-coaching-row2">
+           Simple Text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.
         </div>
         <div class="coaching-btn"></div>
             <div id="btn-demo-learnmore" >
@@ -196,5 +200,31 @@
             </div>
         </div>
     </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        //display grid describe
+        window.addEventListener("scroll", function() {
+            // Kiểm tra vị trí của phần tử
+            var element = document.getElementsByClassName("grid-item-describe");
+            var elementPosition = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            // Nếu phần tử nằm trong cửa sổ hiển thị
+            if (elementPosition < windowHeight) {
+                element.classList.add("show");
+                element.classList.remove("show");
+            }
+            if (elementPosition > windowHeight) {
+                element.classList.add("show");
+                element.classList.remove("show");
+            }
+        });
+    </script>
 </body>
 </html>
