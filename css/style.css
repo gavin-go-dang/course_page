@@ -26,10 +26,24 @@
     padding-right: 10%;
 }
 
+.navbar{
+    background-color: #4fb291;
+    color: ;
+}
+.logo1{
+    float:left;
+    margin-left: 15%;
+}
+.button1{
+    float: right;
+    margin-right: 15%;
+}
+
 #logo-img {
     height: 50px;
     width: 50px;
     padding-bottom: 0;
+    margin-left: 2%;
 }
 
 #btn-menu {
@@ -51,11 +65,12 @@
     color: white;
 }
 
-#text-intro-centered {
+.text-intro-centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 0;
 }
 
 #btn-bgr-intro {
