@@ -1,3 +1,42 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+ }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
 #nav-bar {
     width: auto;
     height: 15%;
@@ -26,10 +65,24 @@
     padding-right: 10%;
 }
 
+.navbar{
+    background-color: #4fb291;
+    color: ;
+}
+.logo1{
+    float:left;
+    margin-left: 15%;
+}
+.button1{
+    float: right;
+    margin-right: 15%;
+}
+
 #logo-img {
     height: 50px;
     width: 50px;
     padding-bottom: 0;
+    margin-left: 2%;
 }
 
 #btn-menu {
@@ -51,11 +104,12 @@
     color: white;
 }
 
-#text-intro-centered {
+.text-intro-centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 0;
 }
 
 #btn-bgr-intro {
@@ -66,8 +120,9 @@
     color: black;
     margin-top: 18%;
     border-radius: 1rem;
-    border-color: black;
-    background-color: #4fb291;
+    border-color: #4fb291;
+    background-color: white;
+    color: #4fb291;
     width: 20%;
     height: fit-content;
     font-family: 'Montserrat';
@@ -148,6 +203,7 @@
 }
 
 .grid-item-describe {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 15%;
@@ -160,8 +216,25 @@
     text-align: center;
     height: 100%;
     width: 60%;
+    animation-name: appearance-3-cols;
+    animation: appearance-3-cols 2s;
+    opacity: 1;
+    transition: 2s all ease;
+}
+.grid-item-describe.show {
+    opacity: 1; /* Hiển thị phần tử */
 }
 
+@keyframes appearance-3-cols{
+    from{
+        filter: blur(8px);
+        top: 300px;
+    }
+    to{
+        filter: blur(None);
+        top:0;
+    }    
+}
 .center-col {
     margin-left: 1%;
     margin-right: 1%;
@@ -230,7 +303,7 @@
 }
 
 .welcome-text {
-    padding-bottom: 4%;
+    padding-bottom: 0%;
 }
 
 .bar-welcome {
@@ -263,7 +336,59 @@
     color: black;
 }
 
+.cell2{    
+    animation-name: cell2;
+    animation: cell2 2s;
+    opacity: 1;
+    transition: 2s all ease;
+}
 
+@keyframes cell2{
+    from{
+        filter: blur(8px);
+        scale: 0;
+    }
+    to{
+        filter: blur(None);
+        scale: 1;
+    }    
+}
+
+.btn-welcome{
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: white;
+    color: #4fb291;
+    font-family: inherit;
+    text-align: center;
+    font-size: 13px;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+    vertical-align:middle;
+    margin-left: 45%;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.welcome-bar{
+    width: 20px;
+    height: 300px;
+    background-color: #4fb291;
+    position: relative;
+    float: top;
+    margin-top:10rem;
+}
+
+.bar-left{
+    float: left;
+}
+
+.bar-right{
+    float: right;
+}
 
 .text-coaching {
     position: absolute;
@@ -298,5 +423,7 @@
 
 .text-coaching-row2 {
     font-size: large;
-    color: black;
+    color: white;
+    margin-top:10%;
+    font-size: larger;
 }
