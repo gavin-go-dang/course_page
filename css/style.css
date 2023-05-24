@@ -392,7 +392,7 @@
 
 .text-coaching {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -409,8 +409,9 @@
     display: inline;
 }
 
-#btn-demo-learnmore {
+/* #btn-demo-learnmore {
     background-color: #4fb291;
+    color: white;
     width: 25%;
     height: 25%;
 }
@@ -419,11 +420,22 @@
     background-color: #4fb291;
     width: 25%;
     height: 25%;
-}
+} */
 
 .text-coaching-row2 {
     font-size: large;
     color: white;
     margin-top:10%;
     font-size: larger;
+}
+
+
+.btn-coaching{
+    background-color: #4fb291;
+    width: 25%;
+    height: 25%;
+}
+
+.text-coaching-row3{
+    display: inline;
 }

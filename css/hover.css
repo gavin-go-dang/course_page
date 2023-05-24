@@ -11,3 +11,17 @@
     background-color: #4fb291;
     color: white;
 }
+/* #btn-demo-coaching:hover{
+    background-color: white;
+    color: #4fb291;
+}
+
+#btn-demo-learnmore:hover{
+    background-color: white;
+    color: #4fb291;
+} */
+
+.btn-coaching:hover{
+    background-color: white;
+    color: #4fb291;  
+}
