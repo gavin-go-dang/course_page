@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/hover.css" />    
     <title>Page Courses</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Page1</a>
+        <a href="#">Page2</a>
+    </div>
+      
     <!-- nav bar -->
     <nav id="navbar">
         <img src="./image/logo-social.jpg" alt="logo-jpg" id="logo-img">
-        <button class="button button1">Menu</button>
+        <span class="button button1" style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
     </nav>
     <!-- page-body -->
     <div class="img-bgr-intro">
@@ -23,12 +29,9 @@
         <div class="text-intro row3">            
                 Sample text. Click to select the text box. Click again or double click to start editing the text. Viverra maecenas accumsan lacus vel facilisis volutpat. Cras fermentum odio eu feugiat pretium nibh. 
         </div>
-        
-        <div id="btn-bgr-intro" >
-            <p id="btn-bgr-intro-text">
-                Learn more
-            </p>
-        </div>
+        <button id="btn-bgr-intro" class="hover-button-white-green">
+            Learn More
+        </button>
         <div class="text-intro row4">
             Image from <a href="https://www.freepik.com/">Feepik</a> 
         </div>
@@ -88,9 +91,7 @@
             </p>
         </div>
         
-        <div class="bar-welcome bar-left">
-
-        </div>
+        <button>Learn more</button>
     </div>
 
     <div class="benefit-div">
@@ -193,5 +194,14 @@
             </div>
         </div>
     </div>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 </html>
