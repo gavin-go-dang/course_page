@@ -2,3 +2,12 @@
     background-color: #4fb291;
     color: white;
 }
+
+.button1:hover{
+    color: #4fb291;
+}
+
+#btn-welcome:hover{
+    background-color: #4fb291;
+    color: white;
+}

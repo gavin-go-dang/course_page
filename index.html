@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/hover.css" />    
     <title>Page Courses</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
@@ -37,7 +38,10 @@
         </div>
     </div>
 
+    <!-- describe course -->
+
     <div class="grid-container-describe">
+        <!-- COL 1 -->
         <div class="grid-item-describe left-col">
             <span class="span-col-descibe">
                 <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -50,6 +54,7 @@
             </p>
             <img src="./image/3031716.png" alt="icon-1" class="icon-col-img">
         </div>
+        <!-- COL 2 -->
         <div class="grid-item-describe center-col">
             <span class="span-col-descibe">
                 <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -62,6 +67,7 @@
             </p>
             <img src="./image/3031716.png" alt="icon-1" class="icon-col-img">
         </div>
+        <!-- COL 3 -->
         <div class="grid-item-describe right-col">            
             <span class="span-col-descibe">
                 <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -79,6 +85,8 @@
         </div>
     </div>
     <div class="welcome-div">
+        <div class="welcome-bar bar-left" ></div>
+        <div class="welcome-bar bar-right"></div>
         <div class="welcome-message">
             <h2 class="welcome-title">
                 Welcome Message
@@ -91,7 +99,7 @@
             </p>
         </div>
         
-        <button>Learn more</button>
+        <button class="btn-welcome welcome-text" id="btn-welcome"><span>Learn more</span></button>
     </div>
 
     <div class="benefit-div">
@@ -111,7 +119,7 @@
             </div>
             <div class="grid-item-describe center-col cell2 top-row">
                 <span class="span-col-descibe">
-                    <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
+                    <i class='fas fa-arrow-right' style='font-size:48px;color:red'></i>
                 </span>
                 <h4 class="title-describe">
                     Create it
@@ -133,7 +141,6 @@
                 </p>
                 <img src="./image/3031716.png" alt="icon-1" class="icon-col-img">
             </div>
-
             <div class="grid-item-describe left-col cell46">
                 <span class="span-col-descibe">
                     <img src="./image/download.jpg" alt="icon-1" class="icon-col-img">
@@ -172,7 +179,6 @@
 
             </div>
         </div>
-
     </div>
     <div class="img-bgr-intro">
         <img src="./image/bg-coaching.jpg" alt="Snow" style="width:100%;" id="img-coaching">
@@ -202,6 +208,23 @@
         function closeNav() {
           document.getElementById("mySidenav").style.width = "0";
         }
+        //display grid describe
+        window.addEventListener("scroll", function() {
+            // Kiểm tra vị trí của phần tử
+            var element = document.getElementsByClassName("grid-item-describe");
+            var elementPosition = element.getBoundingClientRect().top;
+            var windowHeight = window.innerHeight;
+
+            // Nếu phần tử nằm trong cửa sổ hiển thị
+            if (elementPosition < windowHeight) {
+                element.classList.add("show");
+                element.classList.remove("show");
+            }
+            if (elementPosition > windowHeight) {
+                element.classList.add("show");
+                element.classList.remove("show");
+            }
+        });
     </script>
 </body>
 </html>
